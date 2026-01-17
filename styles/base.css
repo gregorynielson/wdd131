@@ -24,13 +24,13 @@ header {
     justify-content: space-around;
     padding: 10px;
     list-style: none;
-    background-color: lightgray;
+    background-color: black;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .navigation:hover {
-    border: 1px solid black;
+    border: 2px solid var(--primary-color);
 }
 
 
