@@ -1,0 +1,113 @@
+:root {
+    --primary-color: rgb(2, 56, 2);
+
+}
+
+body {
+    font-family: "Barlow", sans-serif;
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+.course {
+    display: block;
+    text-align: center;
+    font-size: larger;
+    padding: 2rem;
+    color: white;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    list-style: none;
+    background-color: darkgrey;
+    text-decoration: none;
+    color: black;
+}
+
+.navigation:hover {
+    border: 1px solid black;
+}
+
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: auto;
+    min-width: 800px;
+    
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+h1 {
+    text-align: center;
+    grid-column: 1 / 3;
+    font-weight: 500;
+    
+}
+
+section {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px;
+}
+
+h2 {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: 400;
+    font-size: larger;
+    grid-column: 1 / 4;
+}
+.profile {
+    grid-column: 1 / 3;
+    padding: 5px;
+}
+
+img {
+    max-height: 200px;
+    max-width: 200px;
+    padding: 20px;
+}
+
+figure {
+    grid-column: 1 / 2;
+}
+
+figcaption {
+    text-align: center;
+}
+
+h3{
+    font-weight: 400;
+    border-bottom: 1px solid black;
+    text-align: center;
+    grid-column: 1 / 3;
+}
+
+.resources {
+    margin-top: 150px;
+    font-size:large;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 5px;
+}
+
+.highlight {
+    color: white;
+}
