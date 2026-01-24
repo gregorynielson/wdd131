@@ -1,0 +1,121 @@
+body {
+    /* // <weight>: Use a value from 100 to 900
+    // <uniquifier>: Use a unique and descriptive class name */
+
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffc547;
+    padding: 1rem;
+    position: relative;
+}
+
+.title {
+    font-size: xx-large;
+    font-weight: 500;
+}
+
+#menu {
+    display: block;
+    background-color: #ffc547;
+    color: black;
+    text-decoration: none;
+    font-size:xx-large;
+    text-align: right;
+    padding-bottom: 10px;
+    margin-left: auto;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+nav {
+    background-color: #ffc547;
+    max-width: 640px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.menu-list {
+    display: none;
+}
+
+.menu-list.show {
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.navigation li {
+    display: none;
+}
+
+nav a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: darkorange;
+}
+
+.show li {
+    display: block;
+}
+
+#menu.show::before {
+    content: "X";
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: auto;
+    padding: 1rem;
+    font-weight: 300;
+}
+
+figure {
+    display: grid;
+    justify-items: center;
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+}
+
+figcaption {
+    margin: auto;
+    padding: 1rem;
+}
+
+footer {
+    background-color: #ffc547;
+    text-align: center;
+    padding: 1rem;
+}
