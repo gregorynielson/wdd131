@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Country Page</title>
+    <meta name="description" content="This is a webpage about Los Angeles, California withinformation about the local area and the weather.">
+    <meta name="author" content="Greg Nielson">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Los Angeles</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/los-angeles-skyline.webp" media="(min-width: 650px)">
+            <img src="images/hollywood-sign.webp" alt="Hollywood Sign" width="400">
+        </picture>
+        <section class="data">
+            <h2>Data</h2>
+            <ul>
+                <li><b>Area:</b> 498.3 sq mi</li>
+                <li><b>Polpulation:</b> 3,898,747</li>
+                <li><b>Time Zone:</b> UTC - 08:00</li>
+                <li><b>Elevation:</b> 233 ft</li>
+                <li><b>Mayor:</b> Karen Bass</li>
+                <li><b>Incorporated:</b> Arpil 4, 1850</li>
+            </ul>
+        </section>
+        <section class="weather">
+            <h2>Weather</h2>
+            <img class="icon" src="images/sunny.svg" alt="sunshine icon">
+            <ul>
+                <li><b>Temperature:</b> 83F</li>
+                <li><b>Conditions:</b> Sunny</li>
+                <li><b>Wind:</b> 4 mph</li>
+                <li><b>Wind Chill:</b></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Greg Nielson | Ohio, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+    
+</body>
+</html>

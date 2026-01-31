@@ -1,0 +1,75 @@
+
+
+:root {
+    --primary-color: rgb(16, 105, 16);
+    --secondary-color: rgb(247, 213, 19);
+    --tertiary-color: rgb(178, 3, 3);
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    font-size: x-large;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: auto;
+    padding: 1rem;
+    font-weight: 300;
+    color: var(--secondary-color);
+}
+
+img {
+    width: 100%;
+    border-top: 15px solid var(--tertiary-color);
+    border-bottom: 15px solid var(--tertiary-color);
+}
+
+h2 {
+    text-align: center;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+}
+
+.icon {
+    max-width: 100px;
+    border: none;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    text-align: center;
+    list-style: none;
+    padding: 0.5rem;
+}
+
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1rem;
+    color: var(--secondary-color);
+}

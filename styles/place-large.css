@@ -1,0 +1,31 @@
+
+
+@media screen and (min-width: 650px) {
+    main {
+        display: flex;
+    }
+
+    picture {
+        position: relative;
+    }
+
+    .data {
+        position: absolute;
+        top: 10rem;
+        left: 1rem;
+        background-color: rgb(155, 154, 154, 0.75)
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 5rem;
+        right: 1rem;
+        background-color: rgb(155, 154, 154, 0.75)
+    }
+
+    .icon {
+        max-width: 50px;
+    }
+
+
+}
