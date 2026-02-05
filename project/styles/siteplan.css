@@ -1,0 +1,68 @@
+/*
+.saira {
+  font-family: "Saira", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+    */
+
+:root {
+    font-family: "Saira", sans-serif;
+    font-weight: 400;
+    --primary-color: rgb(11, 11, 138);
+    --secondary-color: rgb(185, 22, 22);
+    --tertiary-color: rgb(255, 255, 255);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+}
+
+h1 {
+    justify-content: center;
+}
+
+.logo {
+    border: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+}
+
+div {
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    margin: 1rem;
+}
+
+img {
+    border: 5px solid var(--tertiary-color);
+    padding: 10px;
+}
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    padding: 10px;
+}
+
