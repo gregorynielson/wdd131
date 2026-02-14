@@ -2,7 +2,6 @@
     --primarycolor: rgb(94, 41, 0);
     --secondarycolor: rgb(247, 206, 131);
     font-family: "Figtree", sans-serif;
-    font-optical-sizing: auto;
     font-weight: 300;
     min-width: 520px;
 }
