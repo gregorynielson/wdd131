@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Product Review Form</title>
+    <meta name="description" content="This is a form for a user to leave a review of a product with the option of leaving a review.">
+    <meta name="author" content="Greg Nielson">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="GET">
+            <div class="product-name">
+                <label for="product">Product Name *</label>
+                <select name="product" id="product" required>
+                    <option value="" disabled selected>Choose a Product...</option>
+                </select>
+            </div>
+            
+            <label class="stars rating-label" for="rating">Overall Rating *</label>
+            <div class="radio-container stars" >
+                <label for="onestar">&star;</label>
+                <input type="radio" id="onestar" name="rating" value="onestar" required>
+            </div>
+            <div class="radio-container stars">
+                <label for="twostar">&star;&star;</label>
+                <input type="radio" id="twostar" name="rating" value="twostar" required>
+            </div>
+            <div class="radio-container stars">
+                <label for="threestar">&star;&star;&star;</label>
+                <input type="radio" id="threestar" name="rating" value="threestar" required>
+            </div>
+            <div class="radio-container stars">
+                <label for="fourstar">&star;&star;&star;&star;</label>
+                <input type="radio" id="fourstar" name="rating" value="fourstar" required>
+            </div>
+            <div class="radio-container stars">
+                <label for="fivestar">&star;&star;&star;&star;&star;</label>
+                <input type="radio" id="fivestar" name="rating" value="fivestar" required>
+            </div>
+            
+            <div class="install">
+                <label for="installdate">Date of Installation *</label>
+                <input type="date" id="installdate" name="installdate" required>
+            </div>
+
+            
+            <label class="feature-label" for="features">Which features did you find useful in the product? <span class="optional">(Check all that apply)</span></label>
+            <div class="checkbox-container">
+                <input type="checkbox" id="durability" name="features" value="durability">
+                <label for="durability">Durability</label>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="ease" name="features" value="ease">
+                <label for="ease">Ease of Use</label>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="performance" name="features" value="performance">
+                <label for="performance">Performance</label>
+            </div>
+            <div class="checkbox-container">
+                <input type="checkbox" id="design" name="features" value="design">
+                <label for="design">Design</label>
+            </div>
+            
+            <div class="written-review">
+                <label for="review">Written Review <span class="optional">(Optional)</span></label>
+                <textarea id="review" name="review" rows="6"></textarea>
+            </div>
+            
+            <div class="your-name">
+                <label for="fullname">Your Name <span class="optional">(Optional)</span></label>
+                <input type="text" id="fullname" name="fullname">
+            </div>
+            <div class="required-warning">
+                <p>* - required</p>
+            </div>
+            
+            <div class="button">
+                <button type="submit">Post Review</button>
+            </div>
+        </form>
+    </main> 
+    <footer>
+        <p>&copy; <span id="year"></span> | Greg Nielson | Ohio, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

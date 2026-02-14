@@ -1,0 +1,28 @@
+
+
+@media screen and (min-width: 650px) {
+    select {
+        max-width: 600px;
+        height: 50px;
+    }
+    .radio-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    input[type="date"] {
+        max-width: 600px;
+        height: 50px;
+    }
+    textarea {
+        max-width: 600px;
+        height: 200px;
+    }
+    input[type="text"] {
+        max-width: 600px;
+        height: 50px;
+    }
+    button {
+        width: 350px;
+    }
+
+}

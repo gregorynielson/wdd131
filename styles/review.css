@@ -1,0 +1,32 @@
+:root {
+    --primarycolor: rgb(94, 41, 0);
+    --secondarycolor: rgb(247, 206, 131);
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+}
+
+header {
+    background-color: var(--primarycolor);
+    padding: 1rem;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+main {
+    background-color: var(--secondarycolor);
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+footer {
+    background-color: var(--primarycolor);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}

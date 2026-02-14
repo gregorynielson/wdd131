@@ -1,0 +1,101 @@
+:root {
+    --primarycolor: rgb(94, 41, 0);
+    --secondarycolor: rgb(247, 206, 131);
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    min-width: 520px;
+}
+
+header {
+    background-color: var(--primarycolor);
+    padding: 0.5rem;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+}
+
+form {
+    background-color: var(--secondarycolor);
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.product-name, .rating-label, .install, .feature-label, .written-review, .your-name {
+    padding: 1rem;
+    display: grid;
+    gap: 5px;
+}
+
+select {
+    width: 100%;
+    height: 30px;
+}
+
+.stars {
+    display: flex;
+}
+
+.radio-container {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    padding-left: 1rem;
+}
+
+.radio-container input {
+    display: block;
+    margin: auto;
+}
+
+input[type="date"] {
+    width: 100%;
+    height: 30px;
+}
+
+.checkbox-container {
+    padding-left: 1rem;
+    padding-top: 5px;
+}
+
+textarea {
+    width: 100%;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 30px;
+}
+
+.required-warning {
+    padding-left: 1rem;
+}
+
+.optional {
+    font-size: smaller;
+    color: rgb(60, 60, 60);
+}
+
+button {
+    background-color: var(--primarycolor);
+    color: white;
+    width: 100%;
+    height: 40px;
+    font-size: 1.5rem;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+footer {
+    background-color: var(--primarycolor);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
