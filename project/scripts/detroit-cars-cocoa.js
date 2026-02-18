@@ -160,7 +160,7 @@ function initializeClock(id, endtime) {
         }
     }
     updateClock();
-    var timeinterval = setInterval(updateClock, 1000);
+    let timeinterval = setInterval(updateClock, 1000);
 }
 
 initializeClock("countdown-clock", deadline);
