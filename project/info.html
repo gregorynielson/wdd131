@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information - Detroit Cars & Cocoa</title>
+    <meta name="description" content="Information page for Detroit Cars & Cocoa car meet club that gives information about pricing and vendors.">
+    <meta name="author" content="Greg Nielson">
+    <link rel="stylesheet" href="styles/detroit-cars-cocoa.css">
+    <link rel="stylesheet" href="styles/detroit-cars-cocoa-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/detroit-cars-cocoa.js" defer></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.svg" alt="detroit cars and cocoa logo">
+        <h1>Detroit Cars & Cocoa</h1>
+        <a id="menu" class="hamburger" href="#" aria-label="menu button"></a>
+        <nav class="menu-list">
+            <ul class="navigation">
+                <li><a id="home" href="index.html">Home</a></li>
+                <li><a id="information" href="info.html">Information</a></li>
+                <li><a id="registration" href="registration.html">Registration</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+       <section class="table-section">
+        <div>
+            <h2>Pricing</h2>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Age</th>
+                    <th>Type</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">0-5</td>
+                    <td>1 Day</td>
+                    <td rowspan="2">Free</td>
+                </tr>
+                <tr>
+                    <td>2 Day</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">6-17</td>
+                    <td>1 Day</td>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td>2 Day</td>
+                    <td>$15</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">18 & Up</td>
+                    <td>1 Day</td>
+                    <td>$20</td>
+                </tr>
+                <tr>
+                    <td>2 Day</td>
+                    <td>$30</td>
+                </tr>
+            </tbody>
+        </table>
+       </section>
+       <section class="table-section">
+        <div>
+            <h2>Vendors</h2>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Booth</th>
+                    <th>Time</th>
+                    <th>Category</th>
+                </tr>
+            </thead>
+            <tbody id="vendor-table">
+            </tbody>
+        </table>
+       </section>
+       
+       <section>
+            <div class="icon-container">
+                <a href="index.html">
+                    <img class="icon" src="images/home.svg" alt="home page icon" loading="lazy">
+                </a>
+                
+                <p>Home</p>
+            </div>
+            <div class="icon-container">
+                <a href="registration.html">
+                    <img class="icon" src="images/registration.svg" alt="registration page icon" loading="lazy">
+                </a>
+                
+                <p>Registration</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Greg Nielson | Ohio, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

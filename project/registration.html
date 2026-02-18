@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Detroit Cars & Cocoa</title>
+    <meta name="description" content="Registration page for Detroit Cars & Cocoa car meet club that gives information about registration and contains the registration form.">
+    <meta name="author" content="Greg Nielson">
+    <link rel="stylesheet" href="styles/detroit-cars-cocoa.css">
+    <link rel="stylesheet" href="styles/detroit-cars-cocoa-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/detroit-cars-cocoa.js" defer></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.svg" alt="detroit cars and cocoa logo">
+        <h1>Detroit Cars & Cocoa</h1>
+        <a id="menu" class="hamburger" href="#" aria-label="menu button"></a>
+        <nav class="menu-list">
+            <ul class="navigation">
+                <li><a id="home" href="index.html">Home</a></li>
+                <li><a id="information" href="info.html">Information</a></li>
+                <li><a id="registration" href="registration.html">Registration</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+       <div>
+        <h2>Registration</h2>
+        <p class="register-info">Sign up today to have your very own spot in our lineup of amazing vehicles.</p>
+        <p class="register-info">Enter the Design Contest for a chance at some exciting prizes!</p>
+       </div>
+       <form action="confirmation.html" method="GET">
+        <div class="first-name">
+            <label for="firstname">First Name <span class="required">*</span></label>
+            <input type="text" id="firstname" name="firstname" required>
+        </div>
+        <div class="last-name">
+            <label for="lastname">Last Name <span class="required">*</span></label>
+            <input type="text" id="lastname" for="lastname" required>
+        </div>
+        <div class="car-make">
+            <label for="carmake">Vehicle Make <span class="required">*</span></label>
+            <input type="text" id="carmake" name="carmake" required>
+        </div>
+        <div class="car-model">
+            <label for="carmodel">Vehicle Model <span class="required">*</span></label>
+            <input type="text" id="carmodel" for="carmodel" required>
+        </div>
+        <label class="choice">Would you like to enter the Design Contest?</label>
+        <div class="contest-choice">
+            <input class="radio-item" type="radio" id="yescontest" name="contest" value="yescontest" required>
+            <label class="label-item" for="yescontest">Yes</label>
+            <input class="radio-item" type="radio" id="nocontest" name="contest" value="nocontest" required>
+            <label class="label-item" for="nocontest">No</label>
+        </div>
+        <div class="user-email">
+            <label for="useremail">Email <span class="optional">- Optional</span></label>
+            <input type="text" id="useremail" name="useremail">
+        </div>
+        <div class="user-phone">
+            <label for="userphone">Phone Number <span class="optional">- Optional</span></label>
+            <input type="text" id="userphone" name="userphone">
+        </div>
+        <div class="button">
+            <button type="submit">Reserve My Spot</button>
+        </div>
+       </form>
+       <section>
+            <div class="icon-container">
+                <a href="index.html">
+                    <img class="icon" src="images/home.svg" alt="home page icon" loading="lazy">
+                </a>
+                
+                <p>Home</p>
+            </div>
+            <div class="icon-container">
+                <a href="info.html">
+                    <img class="icon" src="images/information.svg" alt="information page icon" loading="lazy">
+                </a>
+                
+                <p>Information</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Greg Nielson | Ohio, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

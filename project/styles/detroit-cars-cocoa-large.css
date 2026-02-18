@@ -1,0 +1,48 @@
+
+@media screen and (min-width: 650px) {
+    #countdown-clock {
+        top: 20%;
+    }
+    .mobile-hero {
+        display: none;
+    }
+    .large-hero {
+        display: block;
+        text-decoration: none;
+        margin-top: 0;
+        font-size: x-small;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    #menu {
+        display: none;
+    }
+    nav{
+        position: static;
+        width: auto;
+        margin-right: 0;
+    }
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 0;
+    }
+    .navigation li {
+        display: block;
+    }
+    .menu-list {
+        display: block;
+    }
+    form {
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+    table {
+        margin-left: 7rem;
+        margin-right: 7rem;
+        margin-top: 1rem;
+    }
+    
+}
+

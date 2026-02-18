@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - Detroit Cars & Cocoa</title>
+    <meta name="description" content="Registration page for Detroit Cars & Cocoa car meet club that gives information about registration and contains the registration form.">
+    <meta name="author" content="Greg Nielson">
+    <link rel="stylesheet" href="styles/detroit-cars-cocoa.css">
+    <link rel="stylesheet" href="styles/detroit-cars-cocoa-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/detroit-cars-cocoa.js" defer></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.svg" alt="detroit cars and cocoa logo">
+        <h1>Detroit Cars & Cocoa</h1>
+        <a id="menu" class="hamburger" href="#" aria-label="menu button"></a>
+        <nav class="menu-list">
+            <ul class="navigation">
+                <li><a id="home" href="index.html">Home</a></li>
+                <li><a id="information" href="info.html">Information</a></li>
+                <li><a id="registration" href="registration.html">Registration</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="confirmation-banner">You are registered!</h2>
+        <p class="confirmation"><span class="label">Number of vehicles registered: </span><span class="registrations"></span></p>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Greg Nielson | Ohio, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

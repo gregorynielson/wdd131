@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Detroit Cars & Cocoa</title>
+    <meta name="description" content="Home page for Detroit Cars & Cocoa car meet club that gives information about the club and directs users to registration forms.">
+    <meta name="author" content="Greg Nielson">
+    <link rel="stylesheet" href="styles/detroit-cars-cocoa.css">
+    <link rel="stylesheet" href="styles/detroit-cars-cocoa-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/detroit-cars-cocoa.js" defer></script>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.svg" alt="detroit cars and cocoa logo">
+        
+        <h1>Detroit Cars & Cocoa</h1>
+        <a id="menu" class="hamburger" href="#" aria-label="menu button"></a>
+        <nav class="menu-list">
+            <ul class="navigation">
+                <li><a id="home" href="index.html">Home</a></li>
+                <li><a id="information" href="info.html">Information</a></li>
+                <li><a id="registration" href="registration.html">Registration</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="div-hero">
+            <div id="countdown-clock">
+                <p>Days until next meet!</p>
+                <span class="days"></span>
+                <span class="hours"></span>
+                <span class="minutes"></span>
+                <span class="seconds"></span>
+            </div>
+            <picture>
+                <source srcset="images/large-hero.webp" media="(min-width: 650px)">
+                <img class="hero" src="images/mobile-hero.webp" alt="picture of car meet" loading="lazy">
+            </picture>
+        </div>
+        
+        <p class="mobile-hero">Photo by <a href="https://unsplash.com/@nathanmsdesigns?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nathan Marquardt</a> on <a href="https://unsplash.com/photos/a-parking-lot-filled-with-lots-of-parked-cars-FUMh5K3vRgs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+        <p class="large-hero">Photo by <a href="https://unsplash.com/@nathanmsdesigns?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Nathan Marquardt</a> on <a href="https://unsplash.com/photos/a-group-of-cars-parked-in-a-parking-lot-LAjSZvL8Sxs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a></p>
+            
+        
+        
+        <section>
+            <div class="icon-container">
+                <a href="info.html">
+                    <img class="icon" src="images/information.svg" alt="information page icon" loading="lazy">
+                </a>
+                
+                <p>Information</p>
+            </div>
+            <div class="icon-container">
+                <a href="registration.html">
+                    <img class="icon" src="images/registration.svg" alt="registration page icon" loading="lazy">
+                </a>
+                
+                <p>Registration</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Greg Nielson | Ohio, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
